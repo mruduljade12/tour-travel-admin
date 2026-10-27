@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Add Tour Package"
+            android:textColor="#0F172A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Package Thumbnail -->
+        <ImageView
+            android:id="@+id/ivPackageThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_image_thumbnail_container"
+            android:clickable="true"
+            android:clipToOutline="true"
+            android:contentDescription="Select package thumbnail"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_home" />
+
+        <!-- Package Name -->
+        <EditText
+            android:id="@+id/etPackName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Package Name"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/etPackDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:gravity="top"
+            android:hint="Package Description"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Duration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etDurationDay"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_field"
+                android:hint="Days"
+                android:inputType="number"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etDurationNight"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_field"
+                android:hint="Nights"
+                android:inputType="number"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Price -->
+        <EditText
+            android:id="@+id/etPackPrice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Package Price"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Maximum Capacity -->
+        <EditText
+            android:id="@+id/etMaxCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Maximum Capacity"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Package Status -->
+        <Spinner
+            android:id="@+id/spPackStatus"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_spinner_field"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <!-- Start Date -->
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Start Date"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Driver -->
+        <Spinner
+            android:id="@+id/spDriver"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_spinner_field"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <!-- Tour Guide -->
+        <Spinner
+            android:id="@+id/spGuide"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_spinner_field"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <!-- Destinations -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Destinations"
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSelectDestinations"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_outline_button"
+            android:fontFamily="sans-serif-medium"
+            android:text="Select Destinations"
+            android:textAllCaps="false"
+            android:textColor="#4F46E5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSelectedDestinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_info"
+            android:fontFamily="sans-serif"
+            android:padding="12dp"
+            android:text="No destinations selected"
+            android:textColor="#64748B"
+            android:textSize="13sp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cancel_button"
+                android:fontFamily="sans-serif-medium"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddPackage"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_primary_button"
+                android:fontFamily="sans-serif-medium"
+                android:text="Add Package"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

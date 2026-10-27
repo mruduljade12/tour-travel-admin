@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tour And Travel Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="employee_list">Employee List</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="add_tour_guide">Add Tour Guide</string>
+    <string name="add_driver">Add Driver</string>
+    <string name="add_bus">Add Bus</string>
+    <string name="add_destination">Add Destination</string>
+    <string name="add_hotels">Add Hotels</string>
+    <string name="add_package">Add Package</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="experience">Experience</string>
+    <string name="role">Role</string>
+    <string name="years">years</string>
+    <string name="guide_name">Guide Name</string>
+    <string name="email">Email</string>
+    <string name="leave">Leave</string>
+</resources>

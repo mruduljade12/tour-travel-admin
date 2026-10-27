@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_destination_item_card"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- CheckBox with Destination Title -->
+    <CheckBox
+        android:id="@+id/cbDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#4F46E5"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Destination"
+        android:textColor="#0F172A"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Expandable Details Row -->
+    <LinearLayout
+        android:id="@+id/layoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etDayNumber"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_field"
+            android:hint="Day"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etVisitOrder"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_field"
+            android:hint="Order"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etVisitDate"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_field"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Date"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

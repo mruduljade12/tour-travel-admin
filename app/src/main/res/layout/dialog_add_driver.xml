@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8FAFC"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 1. Profile Image Selection -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_profile_circle_container"
+            android:clipToOutline="true">
+
+            <ImageView
+                android:id="@+id/driverImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E2E8F0"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#990F172A"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Change Image"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+        </FrameLayout>
+
+        <!-- Driver Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Driver Name"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/driverName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Enter driver name"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Driver Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Email Address"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/driverEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Enter email address"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Driver Phone -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Phone Number"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/driverPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Enter 10-digit phone number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- License Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="License Number"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/driverLicenseNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Enter license number"
+            android:inputType="textCapCharacters"
+            android:maxLength="50"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Driver Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Address"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/driverAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_input_field"
+            android:gravity="top|start"
+            android:hint="Enter address"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLength="200"
+            android:padding="12dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <!-- Submit Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/driverSubmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_primary_button"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:text="Add Driver"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

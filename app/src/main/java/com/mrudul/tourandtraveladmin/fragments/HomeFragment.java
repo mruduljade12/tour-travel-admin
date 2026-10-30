@@ -89,7 +89,7 @@ public class HomeFragment extends Fragment {
                     uri -> {
                         if (uri != null) {
                             selectedImageUri = uri;
-                            destinationImg.setImageURI(uri);
+                            driverImg.setImageURI(uri);
                         }
                     });
 
@@ -99,7 +99,7 @@ public class HomeFragment extends Fragment {
                     uri -> {
                         if (uri != null) {
                             selectedImageUri = uri;
-                            driverImg.setImageURI(uri);
+                            destinationImg.setImageURI(uri);
                         }
                     });
 
